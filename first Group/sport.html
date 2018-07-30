@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>رادیو تلویزیون عصر</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<meta name = "viewport" content = "width= device-width, initial-scale=1.0">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.0.6/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon 16x16" type="text/css" href="images/PNG LOGO.png">
+	<style type="text/css">
+	*{
+	box-sizing: border-box;
+}
+.nav{
+	direction:rtl;
+	background-color:#005580;
+	z-index:1;
+
+}
+
+.nav>ul{
+	padding: 0;
+	margin: 0;
+}
+
+.nav ul>li{
+	display:block;
+	text-align:center;
+	border-bottom:1px solid gray;
+}
+
+.nav ul>li>a{
+	display:block;
+	text-decoration: none;
+	padding:15px 20px ;
+	color:white;
+	font-size:22px;
+	transition:1s linear;
+}
+.nav ul>li>a:hover{
+	color:black;
+	text-shadow:2px 2px 3px lightgray
+}
+.nav>ul>li>ul{
+	position:absolute;
+	display: none;
+
+
+}
+
+.nav ul>li>ul>li {
+	font-size:15px;
+	display:block;
+	background-color:gray;
+	border-bottom:1px solid white;
+	transition:1s linear;
+}
+.nav ul>li>ul>li:hover{
+	background-color:white;
+	text-shadow:2px 2px 3px blue;
+	
+}
+.nav>ul>li:hover > ul{
+	display: block;
+
+}
+
+
+
+
+.row{
+	width: 100%;
+}
+
+[class *= "col-"]{
+	width: 100%;
+	padding: 15px;
+	float: left;
+}
+.heder{
+	padding: 20px;
+	background:linear-gradient(#0083b3,#005e80,#00394d,#002533,#00131a);
+	overflow: auto;
+}
+.heder h1{
+	color:white;
+	float:left;
+	cursor:pointer;
+	animation:col 5s linear infinite alternate;
+}
+@keyframes col{
+	0%{
+		color:gray;
+	}
+	50%{color: black;}
+	70%{color: lightgray;}
+
+}
+
+
+.heder img{
+	width:100px;
+	float:right;
+	animation: heder 2s linear infinite;
+	
+
+}
+@keyframes heder{
+	0%{
+		transform:rotateY(360deg);
+	}
+}
+input{
+	background-image:url(../images/background-check.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	border:none;
+	width:80%;
+	height:30px;
+	border-radius:3px;
+	margin-bottom:20px;
+	margin-top:20px;
+
+	
+}
+
+/*foter*/
+
+.fullfotear{
+	direction:rtl;
+	overflow:auto;
+	clear:both;
+	width:100%;
+
+}
+.fotear h2{
+	color:white;
+	font-style:inherit;
+
+}
+.fotear p{
+	font-size:16px;
+	font-weight:bold;
+}
+.fotear li{
+	display:inline-block;
+	font-size:40px;
+	cursor:pointer;
+	padding:10px;
+	color:#005580;
+}
+.fotear li:hover{
+	color:white;
+}
+
+.three div{
+	float: left;
+	width: 33.333%;
+}
+
+.three>div>img {
+	border-radius: 50%;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+.three1 #first{
+	float: left;
+	margin-left:10%;
+}
+
+.three1 #second{
+	float: left;
+	margin-left: 12%;
+}
+
+.three1>div>img {
+	border-radius: 50%;
+	padding: 3px;
+	border: 1px solid white;
+}
+.activ{
+	color:black;
+	text-shadow:3px 3px 5px gray;
+}
+
+
+@media only screen and (min-width: 768px) {
+			.col-1 {width: 8.33%;}
+		    .col-2 {width: 16.66%;}
+		    .col-3 {width: 25%;}
+		    .col-4 {width: 33.33%;}
+		    .col-5 {width: 41.66%;}
+		    .col-6 {width: 50%;}
+		    .col-7 {width: 58.33%;}
+		    .col-8 {width: 66.66%;}
+		    .col-9 {width: 75%;}
+		    .col-10 {width: 83.33%;}
+		    .col-11 {width: 91.66%;}
+		    .col-12 {width: 100%;}
+
+.heder h1{
+	margin-left:40px;
+}
+.heder img{
+	margin-right:40px;
+}
+.nav ul li{
+	display:inline-block;
+	border:none;
+}
+.nav ul>li>ul>li {
+	font-size:15px;
+	display:inline-block;
+	background-color:gray;
+	border-left:1px solid white;
+	transition:1s linear;
+	margin-left:-10px;
+	margin-top:10px;
+	border-bottom:none;
+}
+input{
+	background-image:url(../images/background-check.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	border:none;
+	width:200px;
+	height:30px;
+	border-radius:3px;
+	
+	
+}
+.three1 #first{
+	float: left;
+	margin-left: 26%;
+}
+
+.three1 #second{
+	float: left;
+	margin-left: 9%;
+}
+.activ{
+	text-shadow:3px 3px 5px gray;
+	border:1px solid gray;
+	border-radius:10px;
+	color:black;
+
+
+}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="contener">
+		<!--heder-->
+		<div class="row">
+			<div class="heder">
+				<h1>شبکه <span>عصر</span></h1>
+		
+				<img src="images/PNG LOGO.png">
+				
+			
+			</div>
+		</div>
+		<!--navbar-->
+		<div class="row">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">صفحه نخست</a></li>
+					<li><a href="#h1"> برنامه ها &#9662;</a>
+					<ul>
+						<li><a href="Aslami.html">آموزهای اسلامی</a></li>
+						<li><a href="goal.html">گل</a></li>
+						<li><a href="namaye.html">نمایی ۷</a></li>
+						<li><a href="eshta.html">اشته خاه شد!</a></li>
+						<li><a href="bazar.html">بازار</a></li>
+						<li><a href="healt.html">تندرستی</a></li>
+						<li><a href="#">مهربانی</a></li>
+						<li><a href="#">گردیش گری</a></li>
+						<li><a href="sarang">سارنگ</a></li>
+						<li><a href="#">مستند</a></li>
+					</ul>
+				</li>
+					<li><a href="News.html">خبرها</a></li>
+					
+					<li><a href="https://www.youtube.com/playlist?list=PLd_YileNAODfWSexdP51ZlRUjf8XR0dGh">ویدوها</a></li>
+					<li><a href="index.html">پخش زنده</a></li>
+					<li><a href="index.html">زمان برنامه ها</a></li>
+					<li><a href="sport.html" class="activ">ورزش</a></li>
+					<li><a href="healt.html">تندرستی</a></li>
+					<li><a href="index.html">درباره ما</a></li>
+					<li><a href="index.html">تماس با ما</a></li>
+					<li><input type="text" name="text"></li>
+					
+				</ul>
+				
+			</div>
+			
+		</div>
+		<!--finshed nav bar-->
+		<!--stared mainsection and sidebar-->
+		<div class="head">
+			
+		</div>
+		<div class="both">
+			<div class="sport">
+				<div class="list">
+					<img src="images/afg (6).jpg">
+					<div>
+						<h3> وحید ندیم بازیکن برتر طوفان هریرود</h3>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/afg (5).jpg">
+					<div>
+						<h3>لیگ برتر افغانستان</h3>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/afg (1).jpg">
+					<div>
+						<h3>تیم ملی افغانستان</h3>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/afg (2).jpg">
+					<div>
+						<h3>تیم آرسنال</h3>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/afg (3).jpg">
+					<div>
+						<h3>بارسلونا(FCB)</h3>
+					</div>
+				</div>
+				<div class="list">
+					<img src="images/afg (4).jpg">
+					<div>
+						<h3>رئال مادرید (RM)</h3>
+					</div>
+				</div>
+			</div>
+			<div class="side">
+				<div style="width:255px;">
+					<iframe width="255" height="170" src="https://www.youtube.com/embed/-DrAHr-VbP0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="caption" style="color:#162d51; text-align:center;">برترین برنامه های ورزشی را با ما داشته باشید<br>هر شب ساعت 7:30 شام</div>
+				</div>
+				<div style="width:255px;margin-top:3%;">
+					<iframe width="255" height="170" src="https://www.youtube.com/embed/ZEpSH5Q5jNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="caption" style="color:#162d51; text-align:center;">برترین برنامه های ورزشی را با ما داشته باشید<br>هر شب ساعت 7:30 شام</div>
+				</div>
+				
+				<div style="width:255px;  margin-top:3%;">
+					<iframe width="255" height="170" src="https://www.youtube.com/embed/Bu9RnC52fVc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="caption" style="color:#162d51; text-align:center;">برترین برنامه های ورزشی را با ما داشته باشید<br>هر شب ساعت 7:30 شام</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!--fotear-->
+	
+	<!--fotear-->
+	<div class="fullfotear"  style="margin-top:10%;background:linear-gradient(#0083b3,#005e80,#00394d,#002533,#00131a);" id="fotear">
+	<div class="row">
+		<div class="col-4">
+			<div class="fotear">
+				<h2>درباره ما</h2>
+				<p>شبکه رادیو وتلویزیون عصر در حال حاضر در ولایت هرات دفتر مرکزی داشته و یک نماینده گی در ولایت کابل دارد. همزمان با گسترش فعالیت این رسانه نماینده گی ها و دفاتر در سایر ولایات کشور ایجاد خواهد شد.</p>
+				<h2>حریم خصوصی</h2>
+				<p>تمام اصلاعات این سایت مربوط به شبکه تلویزیون عصر میباشد و حق کاپی محفوظ میباشد</p>
+				
+			
+			</div>
+			
+		</div>
+		<div class="col-4">
+			<div class="fotear">
+				<h2>اسپانسر تیلوزین عصر</h2>
+				<div class="three" style="cursor:pointer;">
+					<div>
+					<img src="images/logo4.PNG" style="width:100px; height: 90;">
+					</div>
+					<div>
+					<img src="images/logo5.PNG"  style="width:100px; height: 90;">
+					</div>
+					<div>
+					<img src="images/logo4.PNG" style="width:100px; height: 90;" >
+					</div>
+				</div>
+				
+				<div class="three1" style="cursor:pointer;">
+					<div id="first">
+					<img src="images/logo4.PNG" style="width:100px; height: 90;">
+					</div>
+					<div id="second">
+					<img src="images/logo5.PNG"  style="width:100px; height: 90;">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-4">
+			<div class="fotear">
+				<h2>تماس با ما</h2>
+				<p>آدرس رادیو:افغانستان هرات فامیلی ها قول اردو جاده انصاری انصاری ۶</p>
+				<p>شماره های تماس:۰۷۹۹۸۹۸۹۵۵</p>
+				<p>ایمیل:info@asrmedia.com.af</p>
+				<p>فیسبوک:www.faceboock.com/asrTV</p>
+				<h2>ما را در این برنامه ها دنبال کنید.</h2>
+				<li><a class="fab fa-twitter-square" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-facebook-square" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-instagram" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-viber" href="#"></a>
+						<a href="#"></a></li>
+			
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	</div>
+</body>
+</html>

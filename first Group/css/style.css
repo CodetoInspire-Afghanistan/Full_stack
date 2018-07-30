@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+}
+.row{
+	width: 100%;
+}
+
+[class *= "col-"]{
+	width: 100%;
+	padding: 15px;
+	float: left;
+}
+.row:after{
+	clear: both;
+	content:" ";
+	display: block;
+}
+.row > ul {
+	float: right;
+	margin-right: 4%;
+	color: white;
+}
+header{
+	background: url(../image/winter.jpg);
+	background-size: 100% 100%;	
+	height: 600px;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: rgba(0,0,0,0.7);
+	
+	width: 100%;
+}
+nav ul li{
+	text-align: center;
+	display: block;
+	border-bottom: 2px solid orange;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	display: block;
+	padding: 12px 8px;	
+}
+.desc{
+	text-align: center;
+	color: white;
+	margin: 10% auto;
+	height: auto;
+}
+.desc a{
+	color: white;
+	padding: 10px 15px;
+	border: 2px solid orange;
+	background-color: black;
+	text-decoration: none;
+}
+.sec1{
+	text-align: center;
+	height: auto;
+}
+.about{
+	width: 70%;
+	margin: auto;
+}
+.about img{
+	width: 100%;
+}
+.about .col-6 a{
+	background-color: orange;
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	transition:border,background-color, color 1.5s;
+}
+.about .col-6 a:hover{
+	
+	border: 2px solid orange;
+	background-color: white;
+	color: orange;
+}
+.sec2{
+background:linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
+	 rgba(0,0,0,0.70) url(../image/fall.jpg);
+	 background-size: 100% 100%;
+	 }
+.service{
+	width: 70%;
+	margin: auto;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+			.container{
+
+				width: 90%;
+				margin: auto;
+			}
+			.col-1 {width: 8.33%;}
+		    .col-2 {width: 16.66%;}
+		    .col-3 {width: 25%;}
+		    .col-4 {width: 33.33%;}
+		    .col-5 {width: 41.66%;}
+		    .col-6 {width: 50%;}
+		    .col-7 {width: 58.33%;}
+		    .col-8 {width: 66.66%;}
+		    .col-9 {width: 75%;}
+		    .col-10 {width: 83.33%;}
+		    .col-11 {width: 91.66%;}
+		    .col-12 {width: 100%;}
+		    nav ul li{
+		    	display: inline-block;
+		    	border-bottom: none;
+		    	border-right: 2px solid orange;
+		    }
+}

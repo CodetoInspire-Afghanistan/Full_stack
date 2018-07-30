@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>نمای 7</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="shortcut icon" 90x90 href="images/PNG LOGO.png">
+	<link rel="shortcut icon" 90x90 href="images/PNG LOGO.png">
+	<meta name = "viewport" content = "width= device-width, initial-scale=1.0">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.0.6/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+	
+	background:linear-gradient(rgba(242, 242, 242, 0.90), rgba(242, 242, 242, 0.90)),
+	 rgba(242, 242, 242,0.90) url(images/bg.jpg);
+	 background-size: 100% 100%;
+	 background-attachment:fixed;
+	 margin:0px;
+  padding:0px;
+
+
+}
+
+
+*{
+	box-sizing: border-box;
+}
+.nav{
+	direction:rtl;
+	background-color:#005580;
+	z-index:1;
+
+}
+
+.nav>ul{
+	padding: 0;
+	margin: 0;
+}
+
+.nav ul>li{
+	display:block;
+	text-align:center;
+	border-bottom:1px solid gray;
+}
+
+.nav ul>li>a{
+	display:block;
+	text-decoration: none;
+	padding:15px 20px ;
+	color:white;
+	font-size:22px;
+	transition:1s linear;
+}
+.nav ul>li>a:hover{
+	color:black;
+	text-shadow:2px 2px 3px lightgray
+}
+.nav>ul>li>ul{
+	position:absolute;
+	display: none;
+
+
+}
+
+.nav ul>li>ul>li {
+	font-size:15px;
+	display:block;
+	background-color:gray;
+	border-bottom:1px solid white;
+	transition:1s linear;
+}
+.nav ul>li>ul>li:hover{
+	background-color:white;
+	text-shadow:2px 2px 3px blue;
+	
+}
+.nav>ul>li:hover > ul{
+	display: block;
+
+}
+
+
+
+
+.row{
+	width: 100%;
+}
+
+[class *= "col-"]{
+	width: 100%;
+	padding: 15px;
+	float: left;
+}
+.heder{
+	padding: 20px;
+	background:linear-gradient(#0083b3,#005e80,#00394d,#002533,#00131a);
+	overflow: auto;
+}
+input{
+	background-image:url(images/background-check.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	border:none;
+	width:80%;
+	height:30px;
+	border-radius:3px;
+	margin-bottom:20px;
+	margin-top:20px;
+
+	
+}
+.heder h1{
+	color:white;
+	float:left;
+	cursor:pointer;
+	animation:col 5s linear infinite alternate;
+}
+@keyframes col{
+	0%{
+		color:gray;
+	}
+	50%{color: black;}
+	70%{color: lightgray;}
+
+}
+
+
+.heder img{
+	width:100px;
+	float:right;
+	animation: heder 2s linear infinite;
+	
+
+}
+@keyframes heder{
+	0%{
+		transform:rotateY(360deg);
+	}
+}
+/* finsh heder*/
+
+
+.allgol{
+width:80%;
+margin:auto;
+overflow:auto;
+margin-bottom:20px;
+}
+.allsec{
+	width:90%;
+margin:auto;
+overflow:auto;
+}
+.sec{
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+}
+.sec iframe{
+	float: left;
+	padding:4px;
+	
+}
+.sec1{
+	clear:both;
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+}
+.sec1 iframe{
+	float: left;
+	padding:4px;
+}
+.sec2{
+	clear:both;
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+	
+}
+.sec2 iframe{
+	float: left;
+	padding:4px;
+}
+.gol{
+	background-color: #005580;
+	padding: 8% 20%;
+	text-align:right;
+	margin-left: -20%;
+}
+.gol1>img{
+	width:100%;
+}
+#backsalid{
+	
+}
+#heading{
+	text-align:right;
+	padding: 3%;
+}
+.fullfotear{
+	direction:rtl;
+	overflow:auto;
+	clear:both;
+	width:100%;
+
+}
+.fotear h2{
+	color:white;
+	font-style:inherit;
+
+}
+.fotear p{
+	font-size:16px;
+	font-weight:bold;
+}
+.fotear li{
+	display:inline-block;
+	font-size:40px;
+	cursor:pointer;
+	padding:10px;
+	color:#005580;
+}
+.fotear li:hover{
+	color:white;
+}
+
+.three div{
+	float: left;
+	width: 33.333%;
+}
+
+.three>div>img {
+	border-radius: 50%;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+.three1 #first{
+	float: left;
+	margin-left:10%;
+}
+
+.three1 #second{
+	float: left;
+	margin-left: 12%;
+}
+
+.three1>div>img {
+	border-radius: 50%;
+	padding: 3px;
+	border: 1px solid white;
+}
+.activ{
+	color:black;
+	text-shadow:3px 3px 5px gray;
+}
+
+
+@media only screen and (min-width: 768px) {
+			.col-1 {width: 8.33%;}
+		    .col-2 {width: 16.66%;}
+		    .col-3 {width: 25%;}
+		    .col-4 {width: 33.33%;}
+		    .col-5 {width: 41.66%;}
+		    .col-6 {width: 50%;}
+		    .col-7 {width: 58.33%;}
+		    .col-8 {width: 66.66%;}
+		    .col-9 {width: 75%;}
+		    .col-10 {width: 83.33%;}
+		    .col-11 {width: 91.66%;}
+		    .col-12 {width: 100%;}
+
+		    .heder h1{
+	margin-left:40px;
+}
+.heder img{
+	margin-right:40px;
+}
+.nav ul li{
+	display:inline-block;
+	border:none;
+}
+.nav ul>li>ul>li {
+	font-size:15px;
+	display:inline-block;
+	background-color:gray;
+	border-left:1px solid white;
+	transition:1s linear;
+	margin-left:-10px;
+	margin-top:10px;
+	border-bottom:none;
+}
+input{
+	background-image:url(images/background-check.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	border:none;
+	width:200px;
+	height:30px;
+	border-radius:3px;
+	
+	
+}
+.three1 #first{
+	float: left;
+	margin-left: 26%;
+}
+
+.three1 #second{
+	float: left;
+	margin-left: 9%;
+}
+
+.allgol{
+width:80%;
+margin:auto;
+overflow:auto;
+margin-bottom:20px;
+color:white;
+line-height:1.4em;
+}
+.allsec{
+	width:90%;
+margin:auto;
+overflow:auto;
+}
+.sec{
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+}
+.sec iframe{
+	float: left;
+	padding:4px;
+	
+}
+.sec1{
+	clear:both;
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+}
+.sec1 iframe{
+	float: left;
+	padding:4px;
+}
+.sec2{
+	clear:both;
+	background-color: #bfc6c7;
+	margin-bottom:4px;
+	
+}
+.sec2 iframe{
+	float: left;
+	padding:4px;
+}
+.gol{
+	background-color: #005580;
+	padding: 3% 20%;
+	text-align:right;
+	margin-left: -20%;
+}
+#backsalid{
+	
+}
+#heading{
+	text-align:right;
+	padding: 3%;
+}
+.gol1>img{
+	width:595px;
+	 height:288px;
+	
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="contener">
+		<!--header-->
+		<div class="row">
+			<div class="heder">
+				<h1>شبکه <span>عصر</span></h1>
+		
+				<img src="images/PNG LOGO.png">
+				
+			
+			</div>
+		</div>
+		<!--navbar-->
+		<div class="row">
+				<div class="nav">
+					<ul>
+					<li><a href="index.html">صفحه نخست</a></li>
+					<li><a href="#h1"> برنامه ها &#9662;</a>
+					<ul>
+						<li><a href="Aslami.html">آموزهای اسلامی</a></li>
+						<li><a href="goal.html">گل</a></li>
+						<li><a href="namaye.html">نمایی ۷</a></li>
+						<li><a href="eshta.html">اشته خاه شد!</a></li>
+						<li><a href="bazar.html">بازار</a></li>
+						<li><a href="healt.html">تندرستی</a></li>
+						<li><a href="#">مهربانی</a></li>
+						<li><a href="#">گردیش گری</a></li>
+						<li><a href="sarang">سارنگ</a></li>
+						<li><a href="#">مستند</a></li>
+					</ul>
+				</li>
+					<li><a href="News.html">خبرها</a></li>
+					
+					<li><a href="https://www.youtube.com/playlist?list=PLd_YileNAODfWSexdP51ZlRUjf8XR0dGh">ویدوها</a></li>
+					<li><a href="index.html">پخش زنده</a></li>
+					<li><a href="index.html">زمان برنامه ها</a></li>
+					<li><a href="sport.html">ورزش</a></li>
+					<li><a href="healt.html">تندرستی</a></li>
+					<li><a href="index.html">درباره ما</a></li>
+					<li><a href="index.html">تماس با ما</a></li>
+					<li><input type="text" name="text"></li>
+					
+				</ul>
+					</div>
+				</div>
+				<!--gol-->
+				<div class="allgol">
+				<div class="row">
+				<div class="col-8">
+				<div class="gol1">
+				<img src="images/نمای7.png" >
+					
+				</div>
+					
+				</div>
+				<div class="col-4">
+				<div class="gol">
+				<h1>نمای 7</h1>
+						<p>نمای 7 یک برنامه سینمای هست ، که به بررسی مهمترین رویداد های سینمای داخلی و خارجی میپردازد همجنان معرفی فیلم های جدید و پر فروش جهان و نقد و بررسی یکی از آثار برتر تاریخ سینمای جهان نیز جز از بخش های این برنامه است</p>
+						<h3>برنامه نمای 7 هر هفته پنجشنبه شب ها از ساعت 21:00 الی 21:30</h3>
+				</div>
+					
+				</div>
+					
+				</div>
+					
+				</div>
+				<!--section2-->
+				<div class="allsec">
+				<div class="row">
+				<div class="col-4" id="backsalid">
+				<div class="sec">
+				<iframe width="120" height="120" src="https://www.youtube.com/embed/eqKaPXvwb2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<div id="heading">
+								<h3>گزارش شهری ایشته خاه شد </h3>
+								<h5>22 مارچ 2018</h5>
+							</div>
+				</div>
+				<div class="sec1">
+				<iframe width="120" height="120" src="https://www.youtube.com/embed/eqKaPXvwb2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<div id="heading">
+								<h3>خبرهای ایشته خاه شد </h3>
+								<h5>22 مارچ 2018</h5>
+							</div>
+				</div>
+				<div class="sec2">
+				<iframe width="120" height="120" src="https://www.youtube.com/embed/eqKaPXvwb2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<div id="heading">
+								<h3>دابسمش های ایشته خاه شد</h3>
+								<h5>22 مارچ 2018</h5>
+							</div>
+				</div>
+				</div>
+			
+				<!--kdjaslkdjlsakd-->
+				<div class="col-8">
+				<div class="sectio" style="">
+					<iframe width="660" height="185" src="https://www.youtube.com/embed/vWAgGtt-RmM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe width="660" height="185" src="https://www.youtube.com/embed/vWAgGtt-RmM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				</div>
+				</div>
+				</div>
+				</div>
+				<!--fotear-->
+	<div class="fullfotear"  style="margin-top:10%;background:linear-gradient(#0083b3,#005e80,#00394d,#002533,#00131a);" id="fotear">
+	<div class="row">
+		<div class="col-4">
+			<div class="fotear">
+				<h2>درباره ما</h2>
+				<p>شبکه رادیو وتلویزیون عصر در حال حاضر در ولایت هرات دفتر مرکزی داشته و یک نماینده گی در ولایت کابل دارد. همزمان با گسترش فعالیت این رسانه نماینده گی ها و دفاتر در سایر ولایات کشور ایجاد خواهد شد.</p>
+				<h2>حریم خصوصی</h2>
+				<p>تمام اصلاعات این سایت مربوط به شبکه تلویزیون عصر میباشد و حق کاپی محفوظ میباشد</p>
+				
+			
+			</div>
+			
+		</div>
+		<div class="col-4">
+			<div class="fotear">
+				<h2>اسپانسر تیلوزین عصر</h2>
+				<div class="three" style="cursor:pointer;">
+					<div>
+					<img src="images/logo4.PNG" style="width:100px; height: 90;">
+					</div>
+					<div>
+					<img src="images/logo5.PNG"  style="width:100px; height: 90;">
+					</div>
+					<div>
+					<img src="images/logo4.PNG" style="width:100px; height: 90;" >
+					</div>
+				</div>
+				
+				<div class="three1" style="cursor:pointer;">
+					<div id="first">
+					<img src="images/logo4.PNG" style="width:100px; height: 90;">
+					</div>
+					<div id="second">
+					<img src="images/logo5.PNG"  style="width:100px; height: 90;">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-4">
+			<div class="fotear">
+				<h2>تماس با ما</h2>
+				<p>آدرس رادیو:افغانستان هرات فامیلی ها قول اردو جاده انصاری انصاری ۶</p>
+				<p>شماره های تماس:۰۷۹۹۸۹۸۹۵۵</p>
+				<p>ایمیل:info@asrmedia.com.af</p>
+				<p>فیسبوک:www.faceboock.com/asrTV</p>
+				<h2>ما را در این برنامه ها دنبال کنید.</h2>
+				<li><a class="fab fa-twitter-square" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-facebook-square" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-instagram" href="#"></a>
+						<a href="#"></a></li>
+						<li><a class="fab fa-viber" href="#"></a>
+						<a href="#"></a></li>
+			
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	</div>
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
