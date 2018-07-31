@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background-image: url("dd.jpg");
+	}
+	table{
+		background-color:  #669999;
+		padding: 12px;
+		margin-bottom: 10px;
+		
+
+
+	}
+	#input1{
+		border:3px solid gray;
+		
+		border: 2px solid white;
+		border-radius: 10px;
+		padding:9%;
+		margin-left:15px;
+		outline: none;
+		background:linear-gradient(0deg, white, white 6% ,	 #99e6e6);
+
+	}
+	.input2{
+		padding:10px 90px;
+		outline: none;
+		border:2px solid #669999;
+		border-radius: 10px;
+		background-color: gray;
+
+	}
+	button{
+		
+		padding: 17px;
+		border:2px solid #669999;
+		border-radius: 10px;
+		outline: none;
+		background-color:gray;
+		width:50PX;
+
+		
+			
+						
+		
+	
+		
+
+	}
+
+	.input2:hover{
+		background-color: #00ffff;
+
+	}
+		button:hover{
+		background-color: #00ffff;
+
+	}
+	button:active{
+		background-color:#66ffc2;
+
+	}
+	div{
+		border:5px solid #141f1f;
+		border-radius: 20px;
+		margin-top: 6%;
+		margin-left: 30%;
+		margin-right: 49%;
+		position: center;
+		background-color:  #669999 ;
+
+	}
+	div p{
+		font-size: 25px;
+		margin-left:70px;
+		padding-top: 10px;
+		color: 	 #1f2e2e;
+	}
+	</style>
+</head>
+<body>
+<div>
+<p>calculator</p>
+<table>
+
+	<tr><input type="text" id="input1"><br></tr>	
+	<tr>
+	
+		<td><button onclick="i(this)">1</button></td>
+		<td><button onclick="i(this)">2</button> </td>
+		<td><button onclick="i(this)">3</button></td>
+		<td><button onclick="i(this)">4</button> </td>
+	</tr>
+	<tr>
+		<td><button onclick="i(this)">5</button></td>
+		<td><button onclick="i(this)">6</button> </td>
+		<td><button onclick="i(this)">7</button></td>
+		<td><button onclick="i(this)">8</button> </td>
+	</tr>
+	<tr>
+	<td><button onclick="i(this)">9</button></td>
+		<td><button onclick="i(this)">0</button> </td>
+		<td><button  id="btnm">=</button></td>
+		<td><button onclick="i(this)">%</button> </td>
+	</tr>
+	<tr>
+	<td><button onclick="i(this)">-</button></td>
+		<td><button onclick="i(this)">+</button> </td>
+		<td><button onclick="i(this)">*</button></td>
+		<td><button onclick="i(this)">.</button> </td>
+	</tr>
+	<tr>
+		<td><button  id="log">log</button></td>
+		<td><button  onclick="s()">sin</button> </td>
+		<td><button  onclick="c()">cos</button></td>
+		<td><button onclick="t">tan</button> </td>
+	</tr>
+	<tr>
+	<td colspan="4" ><input type="button" id="reset" value="clear"class="input2">
+	</td></tr>
+	
+</table>
+</div>	
+<script type="text/javascript">
+
+	var input1=document.getElementById('input1');
+
+	function i(a){
+		
+		input1.value+=a.innerHTML;
+	}
+	var btnm=document.getElementById("btnm");
+	btnm.addEventListener("click",function(){
+		input1.value+="="+eval(document.getElementById("input1").value);
+	});
+	var reset=document.getElementById("reset");
+	reset.addEventListener("click",function(){
+		input1.value=reset.innerHTML;
+	});
+	var log =document.getElementById("log");
+	log.addEventListener("click",function(){
+		input1.value=+Math.log(input1.value);
+	}
+	);
+	function s(){
+		input1.value=Math.sin(parseFloat(input1.value));
+	}
+	function c(){
+		input1.value=Math.cos(parseFloat(input1.value));
+	}
+	function t(){
+		input1.value=Math.tan(parseFloat(input1.value));
+	}
+</script>
+</body>
+</html>
